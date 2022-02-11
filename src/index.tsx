@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Carrinho from './pages/Carrinho'
+import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Carrinho />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
