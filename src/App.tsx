@@ -1,12 +1,12 @@
 import React from "react";
 import GlobalStyles from "./styles/GlobalStyles";
-import Carrinho from "./pages/Carrinho";
+import Layout from "./components/Layout";
 
 const App: React.FC = () => {
     return (
         <>
             <GlobalStyles />
-            <Carrinho />
+            <Layout />
         </>
     )
 }
