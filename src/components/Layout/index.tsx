@@ -4,11 +4,13 @@ import { Grid } from "./styles";
 import Header from "../Header";
 import Content from "../Content";
 
-const Layout: React.FC = () => {
+const Layout: React.FC = ({ children }) => {
     return (
         <Grid>
             <Header />
-            <Content />
+            <Content>
+                { children }
+            </Content>
         </Grid>
     )
 }
