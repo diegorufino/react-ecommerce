@@ -37,9 +37,7 @@ const Produtos: React.FC = () => {
                             image={e.image}
                         /> 
                     )
-                
                 } 
-                
             </Content>
         </Container>
     )

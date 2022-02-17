@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { 
+    Container,
+    Image,
+    Price,
+    Title,
+    AddCart
+} from "./styles";
 import { IProdutosProps } from "../../types";
 
 const Card: React.FC<IProdutosProps> = ({
@@ -11,9 +17,10 @@ const Card: React.FC<IProdutosProps> = ({
 }) => {
     return (
         <Container>
-            <span>{title}</span>
-            <h1>{price}</h1>
-            <img src={image} alt={title} />         
+            <Image width={100} src={image} alt={title} />
+            <Price>R$ {price}</Price>
+            <Title>{title}</Title>
+            <AddCart>Adicionar ao carrinho</AddCart>
         </Container>
     )
 }
