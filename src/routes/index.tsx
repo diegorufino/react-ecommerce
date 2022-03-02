@@ -1,11 +1,18 @@
 import React from "react";
+
 import { BrowserRouter } from 'react-router-dom';
+import { IItem } from "../types";
 
-import App from "./app.routes";
+import AppRoutes from "./app.routes";
 
-const Routes: React.FC = () => (
+type Props = {
+    saveItem: (item: IItem | any) => void,
+    removeItem: (item: IItem | any) => void
+}
+
+const Routes: React.FC<Props> = ({saveItem, removeItem}) => (
     <BrowserRouter>
-        <App />
+        <AppRoutes saveItem={saveItem} removeItem={removeItem} />
     </BrowserRouter>    
     
 )

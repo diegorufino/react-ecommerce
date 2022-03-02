@@ -19,5 +19,8 @@ export default createGlobalStyle`
 
     button {
         cursor: pointer;
+        background-color: #FFD700;
+        font-size: 13px;
+        border-radius: 5%;
     }
 `;

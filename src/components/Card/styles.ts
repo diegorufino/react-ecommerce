@@ -34,10 +34,7 @@ export const Title = styled.span`
 export const AddCart = styled.button`
     bottom: 10px;
     position: absolute;
-    background-color: #FFD700;
     padding: 10px 20px;
     text-align: center;
     display: inline-block;
-    font-size: 13px;
-    border-radius: 5%;
 `

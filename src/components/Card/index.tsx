@@ -7,20 +7,21 @@ import {
     Title,
     AddCart
 } from "./styles";
-import { IProdutosProps } from "../../types";
+import { IItem } from "../../types";
 
-const Card: React.FC<IProdutosProps> = ({
+const Card: React.FC<IItem | any> = ({
     id,
     title,
     price,
-    image
+    image,
+    button
 }) => {
     return (
         <Container>
             <Image width={100} src={image} alt={title} />
             <Price>R$ {price}</Price>
             <Title>{title}</Title>
-            <AddCart>Adicionar ao carrinho</AddCart>
+            <AddCart>{button}</AddCart>
         </Container>
     )
 }
